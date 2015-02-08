@@ -1,3 +1,7 @@
+%Run with: expert.
+%It finds the fault of the engine in a B747 aeroplane with regards to the specs
+%which were provided
+  
 expert:-format("MAIN MENU of expert system"),nl,
         format("1)Oil consumption is high"),nl,
         format("2)Oil quantity indicator is malfunctioning"),nl,
