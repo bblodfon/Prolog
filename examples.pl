@@ -1,3 +1,5 @@
+% some small predicates / functions for exercise
+
 len([],0).
 len([_|X],L) :- len(X,A) , L is A+1.
 
