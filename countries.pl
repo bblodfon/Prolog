@@ -1,3 +1,6 @@
+% This actually is something phenomenal: my friend had a prolog assignment and had the same program in pure C.
+% without even knowing what it does, i made it into a prolog program that gets the same input and outputs the same output!
+% Run: countries('countries1.txt',K,L).
 countries(File,Remaining,Expelled):- read_countries(File,N,List), quicksort(List,L),!, bres(L,N,Remaining,0,0,1,1,Expelled,0,1).
 
 % to Remaining einai to neo N pou prokiptei apo tin lista L eno to Expelled einai to neo R.
