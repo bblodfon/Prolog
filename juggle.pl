@@ -1,5 +1,11 @@
 % gia na ektyponei parapano elements sto "top level" grapse auto:
 % current_prolog_flag(top_level_print_options,X). <- allazoume auto to flag...to default einai max_depth(10).
+% This program returns the siteswaps given the number of balls you juggle,
+% The Maximum Throw number and the Period of the swap (if you know juggling you may know about this!
+% When i wrote this program i didn't knew about juggling lab (which is more MORE advanced than mine) 
+% or i did know and i chose to ignore it, i can;t really remember now!
+% Anyhow, this was an awesome and really fun program!
+% Run: juggle(3,5,3,L).
 
 :-set_prolog_flag(toplevel_print_options,[quoted(true), portray(true), max_depth(100), spacing(next_argument)]).
 

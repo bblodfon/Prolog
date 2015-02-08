@@ -1,5 +1,8 @@
+% This was an assignment for my PL 2 class, see below the program for the 
+% awesomeness of what it does!!!
+
 % to parakato programma trexei stin swi-prolog(exo tin Version 5.10.0)
-% onoma : Ioannis Zompolas , A.M.:03107187
+% onoma : Ioannis Zompolas
 % sto telos tou programmatos exo paradeigmatakia pou deixnoun pos xrisimopoieitai o diermineas pou exo ftiaksei
 % alla liga pragmatakia prin : 1)den akolouthisa kai kata gramma tin prostaktiki glossa twn diafaneiwn (ebala as poume
 % tis prakseis (+,_,*,/) gia poikilia i den ebala kapia alla) 2)to programma dinetai se morfi listas opou ta stoixeia tis mporei na einai:

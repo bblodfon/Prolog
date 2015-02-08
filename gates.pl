@@ -1,3 +1,5 @@
+% How to read a file into lists: i needed that for an assignment!
+% Run:  read_and_just_print_codes('gates1.txt').
 /* The first predicate is not so interesting. It just shows you how you can
  * write in Prolog a predicate that contains a loop with *only* side-effects.
  * Use as:

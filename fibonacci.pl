@@ -1,3 +1,10 @@
+% The 3 Fibonacci algorithms! fib(X,Y) predicate finds the Xth fibonacci number.
+% Run and Compare: 
+% time(fib1(30,L)).
+% time(fib2(30,L)).
+% time(fib3(30,L)).
+% to compare the 2nd and the 3rd put X=5000 or something!
+
 fib1(0,0):-!.
 fib1(1,1):-!.
 fib1(X,Y):- X > 1, T is X-1, L is X-2, fib1(T,TT), fib1(L,LL), Y is TT+LL.
