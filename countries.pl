@@ -1,4 +1,4 @@
-% This actually is something phenomenal: my friend had a prolog assignment and had the same program in pure C.
+% This actually is something phenomenal: my friend had a prolog assignment and had the same program solved in pure C.
 % Without even knowing what it does, i made it into a prolog program that gets the same input and outputs the same output!
 % Run: countries('countries1.txt',K,L).
 
