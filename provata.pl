@@ -1,3 +1,9 @@
+% This was an assignment that i did for the PL class (2013) for a friend.
+% It is a graph-search-related, optimization problem - i don't remember what it actually does (!)
+% but it was well optimized - basically, i do a tree-pruning on the search space
+% based on some restrictions that applied to the specific problem.
+% Run: provata("provata1.txt",L).
+
 provata(File,MinCost):- read_tasos(File,Stanes,Provata,Source,Dest), lleutheia(Stanes,Lstanes), eutheia(Provata,Lprovata),
 start(Lstanes,[Lprovata],Source,Dest,Stanes,Lmiki), min_list(Lmiki,Min_mikos), MinCost is (Provata*2)+(Min_mikos*3).
 

@@ -22,10 +22,10 @@ next_factor(N,F,NF) :- F * F < N, !, NF is F + 2.
 next_factor(N,_,N).                                 % F > sqrt(N)
 
 
-last([A],A).
-last([_|T],N):-last(T,N).
+lasti([A],A).
+lasti([_|T],N):-lasti(T,N).
 
-bigger(I,N) :- prime_factors(I,L) , last(L,N).
+bigger(I,N) :- prime_factors(I,L) , lasti(L,N).
 
 sm(_,1,1).% opoiodipote B kai na paro o ena einai smooth!!!!
 sm(B,I,1) :- bigger(I,L) , L =< B.  % einai B-smooth o I

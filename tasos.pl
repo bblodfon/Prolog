@@ -1,3 +1,8 @@
+% This is a faulty solution for the same problem as in the provata.pl program!
+% It does not produce the Min Cost of the optimization problem for the third case (provata3.txt file)
+% Run: provata('provata3.txt',L). You get: L = 23. (the right answer is L=20 -> provata.pl gives this
+% answer as a result!
+
 provata(File,MinCost):- read_tasos(File,Stanes,Provata,Source,Dest), create(Stanes,LL), reverse(LL,L), start(L,L,Source,Dest,Provata,LLmin),!,
                         bgale_midenika(LLmin,LM), min_list(LM,MinCost).
 start([],_,_,_,_,[]).

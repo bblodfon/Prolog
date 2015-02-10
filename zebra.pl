@@ -1,5 +1,5 @@
-%  -*-prolog-*-
-%
+%  Though this is not mine, i find it of a great educational value!!!
+%  
 %  The Zebra puzzle:  Who owns the zebra?
 %
 %  According to a recent e-mail source, this puzzle originated with

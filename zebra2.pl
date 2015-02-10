@@ -1,3 +1,6 @@
+% My own solution to "Who owns the zebra and who drinks the pepsi(!) puzzle" 
+% Run: zebra(X).
+
 zebra(Houses):- Houses = [house(norwegian,_,_,_,_),house(_,blue,_,_,_),house(_,_,_,milk,_),_,_],
 				member(house(englishman,red,_,_,_),Houses),
 				member(house(spaniard,_,dog,_,_),Houses),

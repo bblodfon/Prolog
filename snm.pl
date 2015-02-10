@@ -1,3 +1,5 @@
+% This was also an assignment for the PL 1 class -> the problem is that i don't even know what it does right now!
+
 %methodos_a(L,L1,A) :- diastrofi_grammis(L,LL,DG) , mikos_stoixeiou(LL,N) , diastrofi_2_n_stili(LL,N,L1,DS) , A is DG+DS.
 %THEORO mikos kathe atomou N > =1 allios pistoli->i pio apli lista tha einai tis morfis dld : L = ['1','4',...] !!!!
 %methodos_b(L,L2,B) :- diastrofi_1_stilis(L,LL) , diastrofi_grammis(LL,LG,DG) , mikos_stoixeiou(LG,N) , diastrofi_2_n_stili(LG,N,L2,DS) , B is 1+DG+DS.

@@ -1,3 +1,6 @@
+% the classic mergesort algorithm
+% Run: mergesort([1,4,2,6,3,9,7,9],L).
+
 mergesort([],[]).
 mergesort([A],[A]).
 mergesort(L,LL) :- L=[_,_|_], halve(L,X,Y) , mergesort(X,XL) , mergesort(Y,YL) , merge(XL,YL,LL).

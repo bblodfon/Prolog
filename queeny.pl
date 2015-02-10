@@ -1,3 +1,6 @@
+% This is the solution to the 8 queens puzzle which considers
+% placing eight chess queens on an 8×8 chessboard so that no two queens threaten each other
+% Run: e1(X).
 abs(X,Y) :- X >=0, Y is X.
 abs(X,Y) :- X < 0, Y is -X.
 
