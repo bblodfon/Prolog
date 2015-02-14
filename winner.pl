@@ -1,3 +1,6 @@
+% The predicate winner returns all the winning positions of the player who plays
+% or is about to play 'X'! ('b' is considered an empty slot). Run: winner(L).
+
 is_win([x,x,x]).
 is_win([b,x,x]).
 is_win([x,b,x]).
