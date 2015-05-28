@@ -5,11 +5,11 @@
 % When i wrote this program i didn't knew about juggling lab (which is more MORE advanced than mine) 
 % or i did know and i chose to ignore it, i can;t really remember now!
 % Anyhow, this was an awesome and really fun program!
-% Run: juggle(3,5,3,L).
+% Run: siteswap(3,5,3,L).
 
 :-set_prolog_flag(toplevel_print_options,[quoted(true), portray(true), max_depth(100), spacing(next_argument)]).
 
-juggle(Balls,MaxThrow,Period,G):- once(findall(P,generate(Balls,MaxThrow,Period,P),L)),length(L,N),kiliomeno_delete(L,LL,N),!,once(ftiakse(LL,GG)),
+siteswap(Balls,MaxThrow,Period,G):- once(findall(P,generate(Balls,MaxThrow,Period,P),L)),length(L,N),kiliomeno_delete(L,LL,N),!,once(ftiakse(LL,GG)),
 allakse(GG,G).
 
 % allakse(A,B):- pairnei tis listes tis A listas kai tis kanei meso tou atomic_list_concat:- [2,3,4,3] -> '2343'.
