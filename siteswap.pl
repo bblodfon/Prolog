@@ -102,3 +102,16 @@ addme([X],X):-!.
 addme([H|T],A):- addme(T,E),!, A is E+H.
 
 isa(A,B):- A =:= B.
+
+% finds tricks in the form [1,2,3,..,N] and all their permutations! Input is a list that is in the form a,a+1,a+2,...
+bresSeires(X):- check_linear(X), length(X,Len), findall(L,bresSeira(X,L,Len),LL), length(LL,Leni), 
+				(Leni == 0 -> false ; kiliomeno_delete(LL,LLL,Leni), allakse(LLL,LA), printList(LA),!).
+bresSeira(X,L,Len):- permutation(X,L), ftiakse_a(A,Len), elegxos(L,A,Len,Len).
+
+% check that the given list is in the form: a,a+1,a+2,...
+check_linear([_]).
+check_linear([A,B]):- B is A+1, !.
+check_linear([H|T]):- T = [A|_], H is A-1, check_linear(T).
+
+printList([H|T]):- print(H), nl, printList(T).
+printList([]).
