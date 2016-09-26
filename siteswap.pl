@@ -5,9 +5,10 @@
 % When I wrote this program I didn't knew about Juggling Lab (which is more MORE advanced than mine) 
 % or the other juggling simulators out there!
 % Run: siteswap(3,5,3,L).
-% Dec 2015: I added a predicate that finds permutated juggling patterns that have all numbers up to n.
-% Run: bresSeires([1,2,3,4,5]). 
-%      bresSeires([3,4,5,6,7]).
+
+% Sept 2016: I added a predicate that finds permutated juggling patterns that have all numbers up to n.
+% Run: permutationSiteswaps(1,5). 
+%      permutationSiteswaps(3,7).
 
 :-set_prolog_flag(toplevel_print_options,[quoted(true), portray(true), max_depth(100), spacing(next_argument)]).
 
@@ -96,7 +97,10 @@ addme([H|T],A):- addme(T,E),!, A is E+H.
 
 isa(A,B):- A =:= B.
 
-% finds tricks in the form [1,2,3,..,N] and all their permutations! Input must be a list that is in the form: [a,a+1,a+2,...]
+permutationSiteswaps(Smallest,Largest):- Smallest >= 0, Smallest < Largest, range(List,Smallest,Largest), bresSeires(List).
+
+% finds tricks in the form [A,A+1,...N-1,N] and all their permutations (that are indeed juggling sequences)!
+% Input must be a list that is in the form: [a,a+1,a+2,...,b], b>a.
 bresSeires(X):- check_linear(X), length(X,Len), findall(L,bresSeira(X,L,Len),LL), length(LL,Leni), 
 				(Leni == 0 -> false ; kiliomeno_delete(LL,LLL,Leni), allakse(LLL,LA), printList(LA),!).
 bresSeira(X,L,Len):- permutation(X,L), ftiakse_a(A,Len), elegxos(L,A,Len,Len).
